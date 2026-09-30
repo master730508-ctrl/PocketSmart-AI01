@@ -1,0 +1,6 @@
+{
+  "name": "PocketSmart AI",
+  "description": "A smart, reliable personal AI assistant for learning, productivity, personal finance, technology, and objective decision-making with English and Tamil support.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

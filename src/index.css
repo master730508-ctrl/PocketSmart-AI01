@@ -1,0 +1,139 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-sans: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+    --font-display: 'Instrument Serif', Georgia, serif;
+    --font-mono: 'JetBrains Mono', monospace;
+  }
+
+  body {
+    font-family: var(--font-sans);
+    font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+  }
+
+  code, pre, .font-mono, .tabular-nums {
+    font-family: var(--font-mono);
+    font-variant-numeric: tabular-nums;
+  }
+}
+
+.font-display-serif {
+  font-family: var(--font-display);
+}
+
+/* Markdown prose formatting for PocketSmart AI responses */
+.pocketsmart-prose h1,
+.pocketsmart-prose h2,
+.pocketsmart-prose h3,
+.pocketsmart-prose h4 {
+  font-weight: 600;
+  color: #0f172a;
+  letter-spacing: -0.015em;
+  margin-top: 1.15rem;
+  margin-bottom: 0.5rem;
+  line-height: 1.35;
+}
+
+.pocketsmart-prose h2 {
+  font-size: 1.125rem;
+  border-bottom: 1px solid #e2e8f0;
+  padding-bottom: 0.35rem;
+}
+
+.pocketsmart-prose h3 {
+  font-size: 1rem;
+}
+
+.pocketsmart-prose p {
+  margin-bottom: 0.75rem;
+  line-height: 1.65;
+}
+
+.pocketsmart-prose p:last-child {
+  margin-bottom: 0;
+}
+
+.pocketsmart-prose ul {
+  list-style-type: disc;
+  padding-left: 1.35rem;
+  margin-bottom: 0.85rem;
+}
+
+.pocketsmart-prose ol {
+  list-style-type: decimal;
+  padding-left: 1.35rem;
+  margin-bottom: 0.85rem;
+}
+
+.pocketsmart-prose li {
+  margin-bottom: 0.3rem;
+  line-height: 1.6;
+}
+
+.pocketsmart-prose strong {
+  font-weight: 600;
+  color: #0f172a;
+}
+
+.pocketsmart-prose code {
+  font-family: var(--font-mono);
+  font-size: 0.84em;
+  background-color: #f1f5f9;
+  color: #0f172a;
+  padding: 0.15rem 0.35rem;
+  border-radius: 0.25rem;
+  border: 1px solid #e2e8f0;
+}
+
+.pocketsmart-prose pre {
+  background-color: #0f172a;
+  color: #f8fafc;
+  padding: 0.9rem 1rem;
+  border-radius: 0.5rem;
+  overflow-x: auto;
+  margin: 0.85rem 0;
+  border: 1px solid #1e293b;
+}
+
+.pocketsmart-prose pre code {
+  background-color: transparent;
+  color: inherit;
+  padding: 0;
+  border: none;
+  font-size: 0.825rem;
+  line-height: 1.6;
+}
+
+.pocketsmart-prose table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 0.9rem 0;
+  font-size: 0.875rem;
+  font-variant-numeric: tabular-nums;
+}
+
+.pocketsmart-prose th {
+  background-color: #f8fafc;
+  color: #334155;
+  font-weight: 600;
+  text-align: left;
+  padding: 0.55rem 0.75rem;
+  border: 1px solid #e2e8f0;
+}
+
+.pocketsmart-prose td {
+  padding: 0.55rem 0.75rem;
+  border: 1px solid #e2e8f0;
+  color: #1e293b;
+  vertical-align: top;
+}
+
+.pocketsmart-prose blockquote {
+  border-left: 3px solid #2563eb;
+  padding-left: 0.85rem;
+  color: #475569;
+  font-style: italic;
+  margin: 0.75rem 0;
+}
+
